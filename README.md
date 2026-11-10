@@ -12,6 +12,8 @@ Autores: Anampa Pancca, David Jordan · Vargas Gutiérrez, Ángel José · Salas
 | [documento/Articulo_Wazuh_Cuatro_Servidores.docx](documento/Articulo_Wazuh_Cuatro_Servidores.docx) | Documento técnico (Word) |
 | [documento/Anexo_A_Triaje_de_Candidatos.csv](documento/Anexo_A_Triaje_de_Candidatos.csv) | Decisión y motivo para cada uno de los 639 registros bibliográficos evaluados |
 | [documento/Anexo_B_Verificacion_de_Referencias.csv](documento/Anexo_B_Verificacion_de_Referencias.csv) | Datos de registro (Crossref, DataCite o sitio oficial) consultados el 10/11/2026 para cada referencia |
+| [presentacion/Presentacion_Wazuh_Cuatro_Servidores.pptx](presentacion/Presentacion_Wazuh_Cuatro_Servidores.pptx) | Presentación (PowerPoint, 14 diapositivas) |
+| [presentacion/Presentacion_Wazuh_Cuatro_Servidores.pdf](presentacion/Presentacion_Wazuh_Cuatro_Servidores.pdf) | Presentación (PDF) |
 | [metadata/corpus_80.csv](metadata/corpus_80.csv) | Catálogo de los 80 artículos del corpus con DOI y SHA-256 del PDF |
 | [metadata/ENLACES.md](metadata/ENLACES.md) | Enlaces a los 80 artículos y a los 3 conjuntos de datos |
 
