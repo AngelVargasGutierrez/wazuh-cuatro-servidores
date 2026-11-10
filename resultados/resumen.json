@@ -1,0 +1,61 @@
+{
+ "stats": {
+  "crudas": 2600263,
+  "deduplicadas": 2108214,
+  "dup_suricata": 306723,
+  "dup_dovecot": 185326
+ },
+ "sanity": {
+  "web_scan_total": 121794,
+  "web_scan_en_ventana": 121794
+ },
+ "roles_crudas": {
+  "sistema": 10034,
+  "ids": 613358,
+  "correo": 277989,
+  "web": 1698882
+ },
+ "roles_dedup": {
+  "sistema": 10034,
+  "ids": 306635,
+  "correo": 92663,
+  "web": 1698882
+ },
+ "escenarios_dedup": {
+  "fox": 432677,
+  "harrison": 494779,
+  "russellmitchell": 22614,
+  "santos": 62639,
+  "shaw": 32955,
+  "wardbeck": 42024,
+  "wheeler": 504683,
+  "wilson": 515843
+ },
+ "ventanas": 34433,
+ "positivas": 705,
+ "ventana_s": 60,
+ "fases": 79,
+ "fases_con_alertas": 76,
+ "fases_detectadas": 65,
+ "alertas_marcadas": 1779724.0,
+ "ventanas_marcadas": 9089,
+ "roles_coactivos": {
+  "1": 19772,
+  "2": 13456,
+  "3": 1190,
+  "4": 15
+ },
+ "roles_coactivos_pos": {
+  "1": 326,
+  "2": 300,
+  "3": 74,
+  "4": 5
+ },
+ "importancia": {
+  "correo": 0.3437520539146631,
+  "ids": 0.29611610506766395,
+  "web": 0.16418116549365963,
+  "x": 0.10437915998911068,
+  "sistema": 0.09157151553490259
+ }
+}

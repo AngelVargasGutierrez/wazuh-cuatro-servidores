@@ -1,0 +1,28 @@
+﻿Flujo;Origen;Destino;Puerto;Fase;Esperado;Obtenido;Regla;Resultado
+Agente web a manager;10.10.10.10;10.10.30.10;tcp/1514;capture;allow;allow;FW-01;OK
+Registro agente correo;10.10.10.20;10.10.30.10;tcp/1515;capture;allow;allow;FW-01;OK
+Agente aut a manager;10.10.20.10;10.10.30.10;tcp/1514;capture;allow;allow;FW-01;OK
+Web resuelve DNS en FW-1;10.10.10.10;10.10.10.1;udp/53;capture;allow;allow;FW-02;OK
+SIEM resuelve DNS en FW-1;10.10.30.10;10.10.30.1;udp/53;install;allow;allow;FW-02;OK
+NTP desde web;10.10.10.10;10.10.10.1;udp/123;capture;allow;allow;FW-04;OK
+NTP desde Kali;10.10.99.10;10.10.99.1;udp/123;capture;allow;allow;FW-04;OK
+Consola de pfSense;10.10.30.50;10.10.30.1;tcp/443;capture;allow;allow;FW-03;OK
+SSH admin a web;10.10.30.50;10.10.10.10;tcp/22;capture;allow;allow;FW-03;OK
+SSH admin a aut;10.10.30.50;10.10.20.10;tcp/22;capture;allow;allow;FW-03;OK
+Anfitrión a dashboard (misma subred);10.10.30.50;10.10.30.10;tcp/443;capture;no_cruza_fw;no_cruza_fw;-;OK
+CP-07 fuerza bruta SSH;10.10.99.10;10.10.10.10;tcp/22;test;allow;allow;FW-05;OK
+CP-02 web;10.10.99.10;10.10.10.10;tcp/80;test;allow;allow;FW-05;OK
+Correo de prueba;10.10.99.10;10.10.10.20;tcp/143;test;allow;allow;FW-06;OK
+LDAP web a aut;10.10.10.10;10.10.20.10;tcp/389;test;allow;allow;FW-07;OK
+DNS web a aut;10.10.10.10;10.10.20.10;tcp/53;test;allow;allow;FW-07;OK
+Parches web;10.10.10.10;93.184.216.34;tcp/443;install;allow;allow;FW-08;OK
+Parches bloqueados en captura;10.10.10.10;93.184.216.34;tcp/443;capture;deny;deny;FW-11;OK
+Shell inversa en prueba;10.10.10.10;10.10.99.10;tcp/4444;test;allow;allow;FW-09;OK
+Shell inversa fuera de prueba;10.10.10.10;10.10.99.10;tcp/4444;capture;deny;deny;FW-11;OK
+Exfiltración DNS en prueba;10.10.10.10;10.10.99.10;udp/53;test;allow;allow;FW-09;OK
+CP-10 Kali a SIEM;10.10.99.10;10.10.30.10;tcp/443;test;deny;deny;FW-10;OK
+Kali a aut;10.10.99.10;10.10.20.10;tcp/389;test;deny;deny;FW-10;OK
+Kali a Internet;10.10.99.10;93.184.216.34;tcp/443;test;deny;deny;FW-11;OK
+Web a SSH de SIEM;10.10.10.10;10.10.30.10;tcp/22;capture;deny;deny;FW-11;OK
+Web a dashboard;10.10.10.10;10.10.30.10;tcp/443;capture;deny;deny;FW-11;OK
+Aut a web (por defecto);10.10.20.10;10.10.10.10;tcp/80;capture;deny;deny;FW-11;OK

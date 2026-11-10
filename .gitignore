@@ -1,0 +1,8 @@
+*.pdf
+!documento/*.pdf
+!docs/*.pdf
+pdfs/
+datasets/
+markdown/
+node_modules/
+__pycache__/

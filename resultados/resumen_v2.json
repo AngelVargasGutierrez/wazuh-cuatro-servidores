@@ -1,0 +1,171 @@
+{
+ "mejor": "LR",
+ "tests": {
+  "LR (solo web)|ap": {
+   "dif_media": 0.05007882296227067,
+   "p": 0.0078125,
+   "ganados": 8
+  },
+  "LR (solo web)|f1": {
+   "dif_media": 0.0190568812604877,
+   "p": 0.109375,
+   "ganados": 6
+  },
+  "LR (solo ids)|ap": {
+   "dif_media": 0.18086947279693755,
+   "p": 0.0390625,
+   "ganados": 7
+  },
+  "LR (solo ids)|f1": {
+   "dif_media": 0.2712279534139842,
+   "p": 0.0078125,
+   "ganados": 8
+  },
+  "LR (solo correo)|ap": {
+   "dif_media": 0.2286820527910171,
+   "p": 0.0078125,
+   "ganados": 8
+  },
+  "LR (solo correo)|f1": {
+   "dif_media": 0.26145038411060306,
+   "p": 0.0078125,
+   "ganados": 8
+  },
+  "LR (solo sistema)|ap": {
+   "dif_media": 0.18303403008907487,
+   "p": 0.0078125,
+   "ganados": 8
+  },
+  "LR (solo sistema)|f1": {
+   "dif_media": 0.2614902703679638,
+   "p": 0.0078125,
+   "ganados": 8
+  },
+  "Regla: nivel Wazuh|ap": {
+   "dif_media": 0.14082167919948413,
+   "p": 0.0078125,
+   "ganados": 8
+  },
+  "Regla: nivel Wazuh|f1": {
+   "dif_media": 0.10663840072214907,
+   "p": 0.0078125,
+   "ganados": 8
+  },
+  "Regla: volumen|ap": {
+   "dif_media": 0.08972476052894235,
+   "p": 0.0078125,
+   "ganados": 8
+  },
+  "Regla: volumen|f1": {
+   "dif_media": 0.11247283185565186,
+   "p": 0.0078125,
+   "ganados": 8
+  }
+ },
+ "etapas": [
+  {
+   "etapa": "Acceso",
+   "fases": 15,
+   "con_alertas": 15,
+   "detectadas": 13,
+   "lat_mediana": 0.0
+  },
+  {
+   "etapa": "Ejecución",
+   "fases": 8,
+   "con_alertas": 8,
+   "detectadas": 8,
+   "lat_mediana": 7.0
+  },
+  {
+   "etapa": "Escalada",
+   "fases": 8,
+   "con_alertas": 8,
+   "detectadas": 8,
+   "lat_mediana": 0.0
+  },
+  {
+   "etapa": "Exfiltración",
+   "fases": 8,
+   "con_alertas": 8,
+   "detectadas": 0,
+   "lat_mediana": NaN
+  },
+  {
+   "etapa": "Impacto",
+   "fases": 8,
+   "con_alertas": 5,
+   "detectadas": 0,
+   "lat_mediana": NaN
+  },
+  {
+   "etapa": "Reconocimiento",
+   "fases": 32,
+   "con_alertas": 32,
+   "detectadas": 31,
+   "lat_mediana": 0.0
+  }
+ ],
+ "campanas": [
+  {
+   "escenario": "fox",
+   "detectadas": 8,
+   "fases": 10
+  },
+  {
+   "escenario": "harrison",
+   "detectadas": 6,
+   "fases": 10
+  },
+  {
+   "escenario": "russellmitchell",
+   "detectadas": 7,
+   "fases": 10
+  },
+  {
+   "escenario": "santos",
+   "detectadas": 8,
+   "fases": 10
+  },
+  {
+   "escenario": "shaw",
+   "detectadas": 8,
+   "fases": 10
+  },
+  {
+   "escenario": "wardbeck",
+   "detectadas": 8,
+   "fases": 10
+  },
+  {
+   "escenario": "wheeler",
+   "detectadas": 7,
+   "fases": 9
+  },
+  {
+   "escenario": "wilson",
+   "detectadas": 8,
+   "fases": 10
+  }
+ ],
+ "falsas_por_dia": {
+  "fox": NaN,
+  "harrison": NaN,
+  "russellmitchell": NaN,
+  "santos": NaN,
+  "shaw": NaN,
+  "wardbeck": 0.6056357773727744,
+  "wheeler": 0.6045340050377834,
+  "wilson": 0.33558611046376136
+ },
+ "duracion_h": {
+  "fox": 117.38333333333334,
+  "harrison": 119.78333333333333,
+  "russellmitchell": 95.61666666666666,
+  "santos": 94.63333333333334,
+  "shaw": 143.41666666666666,
+  "wardbeck": 118.88333333333334,
+  "wheeler": 119.1,
+  "wilson": 143.03333333333333
+ }
+}
