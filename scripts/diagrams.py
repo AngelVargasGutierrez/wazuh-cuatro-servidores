@@ -37,8 +37,17 @@ def arrow(a, p, q, label=None, color=NAVY, ls="-", offset=(0, 1.4), fs=6.9, rad=
         a.text((p[0] + q[0]) / 2 + offset[0], (p[1] + q[1]) / 2 + offset[1], label, ha="center", va="center", fontsize=fs, color=color, bbox=dict(fc="white", ec="none", pad=.6))
 
 
+DIAG = r"D:\ARTICULO_WAZUH\diagramas"
+os.makedirs(DIAG, exist_ok=True)
+NAMES = {"d_arquitectura": "01_Diagrama_de_arquitectura_general", "d_red": "02_Topologia_de_red", "d_seguridad": "03_Diagrama_de_seguridad", "d_despliegue": "04_Diagrama_de_despliegue", "d_flujo_info": "05_Flujo_de_informacion", "d_flujo_ml": "06_Flujo_del_modulo_ML"}
+
+
 def save(f, n):
     f.savefig(os.path.join(OUT, n), dpi=220, bbox_inches="tight", facecolor="white", pad_inches=.04)
+    base = NAMES.get(n[:-4])
+    if base:
+        for ext, kw in (("png", {"dpi": 300}), ("svg", {}), ("pdf", {})):
+            f.savefig(os.path.join(DIAG, f"{base}.{ext}"), bbox_inches="tight", facecolor="white", pad_inches=.06, **kw)
     plt.close(f)
 
 
